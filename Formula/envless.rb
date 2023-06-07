@@ -10,6 +10,8 @@ class Envless < Formula
 
   def install
      inreplace "bin/envless", /^CLIENT_HOME=/, "export ENVLESS_OCLIF_CLIENT_HOME=#{lib/"client"}\nCLIENT_HOME="
+     libexec.install Dir["*"]
+     bin.install_symlink libexec/"bin/envless"
   end
 
   test do

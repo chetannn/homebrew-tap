@@ -4,13 +4,13 @@ class Envless < Formula
   desc ""
   homepage "https://envless.dev"
   url "https://s3.amazonaws.com/testingcli.envless.dev/channels/stable/envless-darwin-x64.tar.gz"
-  sha256 "6cd2be32636611c9081d983712cfd7a9df75784bdfd403e3f7320cc25a68be47"
+  sha256 "db12cfcec9724e48591d48397f5fa50847c56a31050e16330dca74d90683ea9a"
   depends_on "node"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://s3.amazonaws.com/testingcli.envless.dev/channels/stable/envless-darwin-arm64.tar.gz"
-      sha256 "2e509af2c2da98b513de4ddba26d07ea949882a9c599cacc144440878a1866e0"
+      sha256 "fb47a1e08f39a31cdd92eea0c50d3341a19f726f74b78e2e9cd01d2c45e87bed"
     end
   end
 
